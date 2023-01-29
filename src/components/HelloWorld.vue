@@ -3,7 +3,7 @@
   <button @click="onSubmit">Submit</button>
 </template>
 <script>
-import { ref, onMounted } from 'vue'
+import { version, ref, onMounted } from 'vue'
 
 export default {
   props: {
@@ -15,7 +15,7 @@ export default {
       isSubmited.value = !isSubmited.value
     }
 
-    onMounted(() => console.log('component mounted'))
+    onMounted(() => console.log('Component Mounted Vue.js Version :', version))
 
     // template에 전달한다.
     return {

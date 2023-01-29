@@ -7,7 +7,7 @@ export default createStore({
     counter: 1234
   },
   getters: {
-    time2(state) {
+    time5(state) {
       return state.counter * 2
     }
   },

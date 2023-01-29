@@ -6,6 +6,13 @@
       style="width: 100px; border: 1px solid black"
       v-model="selectedCity"
     >
+      <!-- for를 통해 반복해서 화면을 그림 -->
+      <!-- react map 사용 때와 동일하게 key를 필수적으로 넣어주어야한다 -->
+      <!-- v-for는 컴포넌트에 직접 사용하는것도 가능함. 단 key 사용을 잊지말것 -->
+      <!-- for 사용시 주의! -->
+      <!-- v-if와 v-for는 함께 사용 할 수 없음 -->
+      <!-- 같은 노드에 존재할 경우 v-if가 v-for보다 우선순위가 높기때문에 -->
+      <!-- v-for에 접근할수없게됨. -->
       <option :value="city.title" :key="city.code" v-for="city in selectList">
         {{ city.title }}
       </option>
