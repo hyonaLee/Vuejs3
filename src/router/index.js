@@ -126,6 +126,36 @@ const routes = [
     path: '/vuex',
     name: 'vuex',
     component: () => import('../views/4_vuex/VuexTest.vue')
+  },
+  {
+    path: '/inputfile',
+    name: 'inputfile',
+    component: () => import('../views/5_func/InputFile.vue')
+  },
+  {
+    path: '/infiniteScroll',
+    name: 'infiniteScroll',
+    component: () => import('../views/5_func/InfiniteScroll.vue')
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: () => import('../views/5_func/Login.vue')
+  },
+  {
+    path: '/kakao',
+    name: 'kakao',
+    component: () => import('../views/5_func/KaKaoLogin.vue')
+  },
+  {
+    path: '/kakaoSuccess',
+    name: 'kakaoSuccess',
+    component: () => import('../views/5_func/KaKaoLoginSuccess.vue')
+  },
+  {
+    path: '/naver',
+    name: 'naver',
+    component: () => import('../views/5_func/NaverLogin.vue')
   }
 ]
 
